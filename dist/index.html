@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luma 故事演示</title>
+    <script type="module" crossorigin src="/assets/index-DsOH4kPy.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C-WqwR6d.css">
+  </head>
+  <body>
+    <div id="app">
+      <aside class="sidebar">
+        <header class="headline">
+          <p class="brand">故事</p>
+          <h1>铺沟石窟</h1>
+          <p class="subline">演示</p>
+        </header>
+
+        <section class="heritage-card" aria-label="历史信息卡片">
+          <p class="heritage-title">历史遗迹</p>
+          <div class="heritage-actions">
+            <button id="displayToggle" type="button" class="heritage-toggle" aria-pressed="false">动画</button>
+            <button id="showcaseToggle" type="button" class="heritage-toggle heritage-toggle--showcase" aria-pressed="false">展示</button>
+          </div>
+        </section>
+
+        <section id="narrativeScroll" class="narrative-scroll" aria-label="Narrative Scroll">
+          <article class="narrative-block active" data-mode="zwave">
+            <p class="narrative-kicker">01</p>
+            <h2>blank</h2>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+          </article>
+
+          <article class="narrative-block" data-mode="swirl">
+            <p class="narrative-kicker">02</p>
+            <h2>blank</h2>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+          </article>
+
+          <article class="narrative-block" data-mode="breath">
+            <p class="narrative-kicker">03</p>
+            <h2>blank</h2>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+          </article>
+
+          <article class="narrative-block" data-mode="explode">
+            <p class="narrative-kicker">04</p>
+            <h2>blank</h2>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+            <p>blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank blank</p>
+          </article>
+        </section>
+
+        <div class="qr-card">
+          <div class="qr-title">移动端二维码</div>
+          <img id="mobileQr" alt="移动端二维码" />
+          <a id="mobileLink" target="_blank" rel="noreferrer noopener"></a>
+          <div id="mobileHint" class="hint-text"></div>
+        </div>
+      </aside>
+
+      <div id="splitter" class="splitter" aria-hidden="true"></div>
+
+      <main class="stage-wrap">
+        <div class="stage">
+          <canvas id="backdropCanvas"></canvas>
+          <canvas id="canvas"></canvas>
+          <div id="bubbleLayer" class="bubble-layer"></div>
+        </div>
+      </main>
+    </div>
+
+  </body>
+</html>
